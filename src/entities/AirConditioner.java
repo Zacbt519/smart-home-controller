@@ -4,7 +4,7 @@ import interfaces.Appliance;
 
 public class AirConditioner implements Appliance {
 
-    // "off" to turn off
+    // "off" to turn off, "on" to turn on
     private String mode;
 
     @Override
@@ -13,16 +13,12 @@ public class AirConditioner implements Appliance {
     }
 
     @Override
-    public void turnApplicanceOff() {
+    public void turnApplianceOff() {
         mode = "off";
     }
 
     @Override
     public boolean isApplianceOn() {
-        if(mode.equalsIgnoreCase("on")){
-            return true;
-        } else {
-            return false;
-        }
+        return mode.equalsIgnoreCase("on");
     }
 }

@@ -2,6 +2,6 @@ package interfaces;
 
 public interface Appliance {
     void turnApplianceOn();
-    void turnApplicanceOff();
+    void turnApplianceOff();
     boolean isApplianceOn();
 }

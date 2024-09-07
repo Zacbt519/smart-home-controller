@@ -2,9 +2,6 @@ import controllers.SmartHomeController;
 import entities.AirConditioner;
 import entities.Fan;
 import entities.Light;
-import interfaces.Appliance;
-
-import java.util.List;
 
 public class Main {
 
@@ -17,7 +14,6 @@ public class Main {
         homeController.addAppliance(new AirConditioner());
 
         homeController.turnOnAllAppliances();
-
         homeController.scheduleUpdate();
     }
 }

@@ -12,7 +12,7 @@ public class Light implements Appliance {
     }
 
     @Override
-    public void turnApplicanceOff() {
+    public void turnApplianceOff() {
         isApplianceOn = false;
     }
 

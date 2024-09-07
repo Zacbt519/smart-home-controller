@@ -13,16 +13,12 @@ public class Fan implements Appliance {
     }
 
     @Override
-    public void turnApplicanceOff() {
+    public void turnApplianceOff() {
         fanSpeed = 0;
     }
 
     @Override
     public boolean isApplianceOn() {
-        if(fanSpeed > 0){
-            return true;
-        } else {
-            return false;
-        }
+        return fanSpeed > 0;
     }
 }
